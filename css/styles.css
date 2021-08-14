@@ -264,6 +264,24 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
+/* cпосіб через бекграунд  */
+/* <div class="feature-list-item-bc">
+    <svg class="feature-list-item-icon">
+      <use href="./images/svg/sprite.svg#icon-antenna"></use>
+    </svg>
+  </div> */
+.feature-list-item-bc {
+  background-color: var(--third-background-color);
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature-list-item-icon {
+  width: 70px;
+  height: 70px;
+}
 .feature-list-item::before {
   content: '';
   display: block;
@@ -412,8 +430,7 @@ body {
 /*   end team  section */
 
 /*    clients  section */
-.clients {
-}
+
 .clients-title {
   text-align: center;
   margin-bottom: 50px;
@@ -498,8 +515,7 @@ body {
 .address-link {
   color: var(--secondary-text-color);
 }
-.footer-center {
-}
+
 .footer-text {
   font-weight: 700;
   font-size: 14px;

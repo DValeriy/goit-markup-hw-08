@@ -63,7 +63,7 @@
       <section class="hero section">
         <div class="container ">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button pointer">Заказать услугу</button>
+          <button type="button" class="hero-button pointer" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -106,28 +106,39 @@
           <h2 class="work-title">Чем мы занимаемся</h2>
           <ul class="work-list list">
             <li class="work-list-item">
-              <img
+              <div class="work-list-item-img">
+                <img
                 class="work-list-img"
                 src="./images/Work_with/work_with_decktop.jpg"
                 alt="Работа с настольным компьютером"
-                width="370"
-              />
+                width="370"              />
+                <div class="work-list-item-img-container">
+                <p class="work-list-item-img-container-title">Десктопные приложения </p>
+                </div>              
+              </div>
             </li>
             <li class="work-list-item">
-              <img
+              <div class="work-list-item-img">
+                <img
                 class="work-list-img"
                 src="./images/Work_with/work_with_phone.jpg"
-                alt="Работа с телефоном"
-                width="370"
-              />
-            </li>
-            <li class="work-list-item">
-              <img
+                alt="Работа с настольным компьютером"
+                width="370"              />
+                <div class="work-list-item-img-container">
+                <p class="work-list-item-img-container-title">Мобильные приложения </p>
+                </div>              
+              </div>
+            </li><li class="work-list-item">
+              <div class="work-list-item-img">
+                <img
                 class="work-list-img"
                 src="./images/Work_with/work_with_tablet.jpg"
-                alt="Работа с планшетом"
-                width="370"
-              />
+                alt="Работа с настольным компьютером"
+                width="370"              />
+                <div class="work-list-item-img-container">
+                <p class="work-list-item-img-container-title">Дизайнерские решения </p>
+                </div>              
+              </div>
             </li>
           </ul>
         </div>
@@ -520,5 +531,17 @@
         
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-button pointer" data-modal-close>
+          <svg class="modal-button-icon">
+           <use href="./images/svg/sprite1.svg#icon-vector"></use>
+           </svg>
+        </button>        
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

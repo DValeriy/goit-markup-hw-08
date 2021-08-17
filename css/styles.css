@@ -815,7 +815,7 @@ body {
   fill: var(--logo);
   transition: fill var(--transition-duration) var(--cubic);
 }
-.modal-button-icon:hover {
+.modal-button:hover .modal-button-icon {
   fill: var(--accent-color);
 }
 .modal-form {
@@ -877,8 +877,11 @@ body {
   width: 448px;
   height: 120px;
   padding: 12px 16px;
+  transition: border-color var(--transition-duration) var(--cubic);
 }
-
+.modal-form-infoblock-comment:focus {
+  border-color: var(--accent-color);
+}
 .modal-form-infoblock-comment::placeholder {
   font-size: 12px;
   line-height: 1.16;
@@ -889,6 +892,7 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 30px;
+  margin-top: 20px;
 }
 .modal-form-policy-checkbox {
   display: block;

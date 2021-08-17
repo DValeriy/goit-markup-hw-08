@@ -814,6 +814,9 @@ body {
   height: 11px;
   fill: var(--logo);
 }
+.modal-button-icon:hover {
+  fill: var(--accent-color);
+}
 .modal-form {
   padding: 40px;
 }

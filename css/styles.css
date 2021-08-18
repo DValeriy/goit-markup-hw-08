@@ -288,7 +288,7 @@ body {
       <use href="./images/svg/sprite.svg#icon-antenna"></use>
     </svg>
   </div> */
-.feature-list-item-bc {
+/* .feature-list-item-bc {
   background-color: var(--third-background-color);
   width: 270px;
   height: 120px;
@@ -299,7 +299,7 @@ body {
 .feature-list-item-icon {
   width: 70px;
   height: 70px;
-}
+} */
 .feature-list-item::before {
   content: '';
   display: block;

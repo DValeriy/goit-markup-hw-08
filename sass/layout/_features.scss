@@ -1,0 +1,72 @@
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.feature-list-item {
+  flex-basis: calc((100% - 120px) / 4);
+  margin-top: 30px;
+  margin-left: 30px;
+  &::before {
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-color: var(--third-background-color);
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &:nth-child(1):before {
+    background-image: url(../images/svg/antenna.svg);
+    background-size: 70px 70px;
+  }
+  &:nth-child(2):before {
+    background-image: url(../images/svg/clock.svg);
+    background-size: 70px 70px;
+  }
+  &:nth-child(3):before {
+    background-image: url(../images/svg/diagram.svg);
+    background-size: 70px 70px;
+  }
+  &:nth-child(4):before {
+    background-image: url(../images/svg/astronaut.svg);
+    background-size: 70px 70px;
+  }
+}
+
+.feature-list-title {
+  color: var(--primary-title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.feature-list-description {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+//  cпосіб через спрайт
+//  <div class="feature-list-item-bc">
+// <svg class="feature-list-item-icon">
+// <use href="./images/svg/sprite.svg#icon-antenna"></use>
+// </svg>
+// </div> */
+//  .feature-list-item-bc {
+// background-color: var(--third-background-color);
+// width: 270px;
+// height: 120px;
+// display: flex;
+// justify-content: center;
+// align-items: center;
+// }
+// .feature-list-item-icon {
+// width: 70px;
+// height: 70px;

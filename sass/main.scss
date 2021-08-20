@@ -1,11 +1,15 @@
+//  Base
+@import './base/container';
+
 // utils
 @import './utils/variables';
 @import './utils/reset-styles';
 @import './utils/cursors';
 @import './utils/visual-hidden';
+@import './utils/centered';
 
 // components
-@import './components/container';
+
 @import './components/section';
 @import './components/logo';
 @import './components/navigation';
@@ -14,6 +18,7 @@
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form-infoblock';
+@import './components/contacts-info';
 
 // layouts
 @import './layout/body';
@@ -25,4 +30,3 @@
 @import './layout/clients';
 @import './layout/footer';
 @import './layout/portdolio';
-@import './layout/modal-form';

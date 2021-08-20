@@ -1,14 +1,14 @@
-.nav-list {
+.nav__list {
   display: flex;
 }
 
-.nav-list-item {
+.nav__item {
   &:not(:last-child) {
     margin-right: 50px;
   }
 }
 
-.nav-list-link {
+.nav__link {
   display: block;
   color: var(--primary-title-color);
   font-weight: 500;
@@ -20,19 +20,18 @@
   &:focus {
     color: var(--accent-color);
   }
-}
-
-.current {
-  color: var(--accent-color);
-  position: relative;
-  &::after {
-    position: absolute;
-    bottom: -1px;
-    content: '';
-    width: 100%;
-    height: 4px;
-    display: block;
-    background-color: var(--accent-color);
-    border-radius: 2px;
+  &_current {
+    color: var(--accent-color);
+    position: relative;
+    &::after {
+      position: absolute;
+      bottom: -1px;
+      content: '';
+      width: 100%;
+      height: 4px;
+      display: block;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+    }
   }
 }

@@ -10,7 +10,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal-button {
+.modal__button {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -24,12 +24,12 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.modal-button-icon {
+.modal__icon {
   width: 11px;
   height: 11px;
   fill: var(--logo);
   transition: fill var(--transition-duration) var(--cubic);
-  .modal-button:hover & {
+  .modal__button:hover & {
     fill: var(--accent-color);
   }
 }

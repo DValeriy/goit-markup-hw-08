@@ -1,9 +1,22 @@
-.modal-form-infoblock {
+.modal-form {
+  padding: 40px;
+}
+
+.modal-form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--primary-title-color);
+  margin-bottom: 12px;
+}
+
+.modal-form__infoblock {
   display: block;
   margin-bottom: 10px;
 }
 
-.modal-form-infoblock-label {
+.modal-form__label {
   display: block;
   font-size: 12px;
   line-height: 1.16;
@@ -11,12 +24,12 @@
   margin-bottom: 4px;
 }
 
-.modal-form-infoblock-wrap {
+.modal-form__wrap {
   position: relative;
   display: block;
 }
 
-.modal-form-infoblock-wrap-input {
+.modal-form__input {
   display: block;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -29,7 +42,7 @@
   }
 }
 
-.modal-form-infoblock-wrap-icon {
+.modal-form__icon {
   position: absolute;
   left: 15px;
   top: 50%;
@@ -37,7 +50,68 @@
   fill: var(--primary-title-color);
   transition: fill var(--transition-duration) var(--cubic),
     fill var(--transition-duration) var(--cubic);
-  .modal-form-infoblock-wrap-input:focus + & {
+  .modal-form__input:focus + & {
     fill: var(--accent-color);
   }
+}
+
+.modal-form__comment {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  transition: border-color var(--transition-duration) var(--cubic);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal-form__policy {
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.modal-form__policy-checkbox {
+  display: block;
+  margin-left: 0;
+  top: 50%;
+  left: 7px;
+  transform: translateY(50%);
+}
+
+.modal-form__policy-wrap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #212121;
+  width: 16px;
+  height: 16px;
+  margin-right: 9px;
+  border-radius: 2px;
+  .modal-form__policy-checkbox:checked + & {
+    background-color: var(--accent-color);
+    fill: var(--secondary-title-color);
+    border: 1px solid transparent;
+  }
+}
+
+.modal-form__policy-icon {
+  fill: var(--secondary-title-color);
+}
+
+.modal-form__policy-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.modal-form__policy-link {
+  color: var(--accent-color);
 }

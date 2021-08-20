@@ -1,16 +1,23 @@
 .header {
-  background-color: var(--primary-background-color);
   border-bottom: 1px solid #ececec;
-  &-container {
-    display: flex;
-    align-items: center;
-  }
 }
-.header-contact {
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.header__contact {
   display: flex;
   margin-left: auto;
 }
-.header-contact-link {
+
+.header__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.header__link {
   display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -24,13 +31,7 @@
   }
 }
 
-.header-contact-item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
-.header-contact-item-icon {
+.header__icon {
   margin-right: 10px;
   fill: currentColor;
 }

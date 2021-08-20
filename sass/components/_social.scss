@@ -1,13 +1,13 @@
 .social {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
-.social-item {
+.social__item {
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
-.social-link {
+.social__link {
   display: flex;
   width: 44px;
   height: 44px;
@@ -22,13 +22,13 @@
   }
 }
 
-.social-icon {
+.social__icon {
   fill: var(--company-logo-fill);
   width: 20px;
   height: 20px;
   transition: fill var(--transition-duration) var(--cubic);
-  .social-link:hover &,
-  .social-link:focus & {
+  .social__link:hover &,
+  .social__link:focus & {
     fill: var(--secondary-title-color);
   }
 }

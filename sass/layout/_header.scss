@@ -2,6 +2,9 @@
   border-bottom: 1px solid #ececec;
 }
 
+.header-centered {
+  @extend %centered;
+}
 .header__logo {
   margin-right: 93px;
 }

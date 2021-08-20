@@ -1,12 +1,11 @@
-//  Base
-@import './base/container';
-
 // utils
 @import './utils/variables';
-@import './utils/reset-styles';
-@import './utils/cursors';
 @import './utils/visual-hidden';
-@import './utils/centered';
+@import './utils/placeholders';
+
+//  Base
+@import './base/container';
+@import './base/common';
 
 // components
 
@@ -21,7 +20,6 @@
 @import './components/contacts-info';
 
 // layouts
-@import './layout/body';
 @import './layout/header';
 @import './layout/hero';
 @import './layout/features';

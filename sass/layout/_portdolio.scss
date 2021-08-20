@@ -20,6 +20,7 @@
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 6px 22px;
+  cursor: pointer;
   transition: color var(--transition-duration) var(--cubic),
     background-color var(--transition-duration) var(--cubic),
     box-shadow var(--transition-duration) var(--cubic);

@@ -73,6 +73,7 @@
 }
 
 .modal-form__policy {
+  display: block;
   position: relative;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -114,4 +115,7 @@
 
 .modal-form__policy-link {
   color: var(--accent-color);
+}
+
+.modal__button {
 }

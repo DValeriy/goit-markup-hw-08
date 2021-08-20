@@ -33,3 +33,12 @@ img {
   text-decoration: none;
   color: inherit;
 }
+
+body {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+}

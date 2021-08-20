@@ -18,13 +18,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <header class="header">
-      <div class="container centered">
+      <div class="container header-centered">
         <a class="logo link header-link header__logo" href="./index.html">
           <span class="logo__first-part">Web</span>Studio
         </a>
@@ -66,7 +65,7 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="button pointer" data-modal-open>Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -556,7 +555,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal__button pointer" type="button" data-modal-close>
+        <button class="modal__button" type="button" data-modal-close>
           <svg class="modal__icon">
             <use href="./images/svg/sprite.svg#icon-cross"></use>
           </svg>
@@ -642,7 +641,7 @@
             </span>
           </label>
 
-          <button class="button" type="submit">Отправить</button>
+          <button class="button modal__nutton" type="submit">Отправить</button>
         </form>
       </div>
     </div>

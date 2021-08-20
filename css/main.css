@@ -19,8 +19,8 @@
   --company-logo-fill: #afb1b8;
   --transition-duration: 250ms;
   --cubic: cubic-bezier(0.4, 0, 0.2, 1);
-  --main-font: 'Roboto';
-  --secondary-font: 'Raleway';
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }
 
 h1,
@@ -88,7 +88,7 @@ img {
 
 .logo {
   color: var(--logo);
-  font-family: var(--secondary-font), sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -399,7 +399,7 @@ img {
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font);
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.03em;

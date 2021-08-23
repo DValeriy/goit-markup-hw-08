@@ -1,6 +1,6 @@
 .social {
   display: flex;
-  // flex-wrap: wrap;
+  justify-content: center;
 }
 .social__item {
   &:not(:last-child) {
@@ -9,12 +9,12 @@
 }
 .social__link {
   display: flex;
-  width: 44px;
-  height: 44px;
   align-items: center;
   justify-content: center;
-  background-color: var(--primary-background-color);
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  background-color: var(--primary-background-color);
   transition: background-color var(--transition-duration) var(--cubic);
   &:hover,
   &:focus {
@@ -23,9 +23,9 @@
 }
 
 .social__icon {
-  fill: var(--company-logo-fill);
   width: 20px;
   height: 20px;
+  fill: var(--company-logo-fill);
   transition: fill var(--transition-duration) var(--cubic);
   .social__link:hover &,
   .social__link:focus & {

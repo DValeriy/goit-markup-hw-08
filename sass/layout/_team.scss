@@ -3,47 +3,74 @@
 }
 
 .team__header {
-  color: var(--primary-title-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  margin-bottom: 30px;
   text-align: center;
-  color: #212121;
-  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+  color: var(--primary-title-color);
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 }
 
 .team__item {
-  flex-basis: calc((100% - 120px) / 4);
-  margin-top: 30px;
-  margin-left: 30px;
+  // flex-basis: calc((100% - 120px) / 4);
+  margin-bottom: 30px;
+  width: 100%;
   border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  box-shadow: 0px 1px 3px rgba(56, 44, 44, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 .team__meta {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 30px 57px 24px;
   background-color: var(--primary-background-color);
   border-radius: 0px 0px 4px 4px;
+  @media screen and (min-width: 480px) {
+    padding: 30px 122px 24px;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 30px 74px 24px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 30px 32px;
+  }
 }
 .team__title {
   text-align: center;
   margin-bottom: 10px;
-  color: var(--primary-title-color);
   font-weight: 500;
   line-height: 1.18;
+  color: var(--primary-title-color);
 }
 .team__description {
-  line-height: 1.18;
-  text-align: center;
   margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.18;
 }

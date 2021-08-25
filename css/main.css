@@ -265,7 +265,7 @@ body {
 
 .modal {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 90%;
@@ -710,6 +710,12 @@ body {
   color: var(--primary-title-color);
 }
 
+@media screen and (min-width: 480px) {
+  .features__title {
+    text-align: start;
+  }
+}
+
 .features__description {
   font-size: 14px;
   line-height: 1.71;
@@ -1110,8 +1116,14 @@ body {
 .portfolio__btn-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   margin-top: -15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__btn-list {
+    justify-content: center;
+  }
 }
 
 .portfolio__btn-item {

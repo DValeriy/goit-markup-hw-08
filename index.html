@@ -36,7 +36,7 @@
               <a class="nav__link link" href="portfolio.html">Портфолио</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link link" href="">Контакты</a>
+              <a class="nav__link link" href="#contact-list">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -44,14 +44,16 @@
           <li class="header__item">
             <a class="header__link link" href="mailto:info@devstudio.com"
               ><svg class="header__icon" width="16" height="12">
-                <use href="./images/svg/sprite.svg#icon-envelope"></use>
-              </svg>info@devstudio.com</a>
+                <use href="./images/svg/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
           <li class="header__item">
             <a class="header__link link" href="tel:+380961111111">
               <svg class="header__icon" width="10" height="16">
-                <use href="./images/svg/sprite.svg#icon-smartphone"></use>
-              </svg>+38 096 111 11 11</a>
+                <use href="./images/svg/sprite.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
         <button class="burger-btn" data-menu-open>
@@ -69,13 +71,13 @@
           </button>
           <ul class="mob-menu__nav list">
             <li class="mob-menu__nav-item">
-              <a href="" class="mob-menu__nav-link link">Студия</a>
+              <a href="./index.html" class="mob-menu__nav-link link active-page">Студия</a>
             </li>
             <li class="mob-menu__nav-item">
-              <a href="" class="mob-menu__nav-link link">Портфолио</a>
+              <a href="portfolio.html" class="mob-menu__nav-link link">Портфолио</a>
             </li>
             <li class="mob-menu__nav-item">
-              <a href="" class="mob-menu__nav-link link">Контакты</a>
+              <a href="./index.html#contact-list" class="mob-menu__nav-link link">Контакты</a>
             </li>
           </ul>
           <ul class="mob-menu__contact list">
@@ -83,23 +85,48 @@
               <a class="mob-menu__tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
             <li class="mob-menu__contact-item">
-              <a class="mob-menu__email-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="mob-menu__email-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
             </li>
           </ul>
           <ul class="mob-menu__social list">
             <li class="mob-menu__social-item">
-              <a class="mob-menu__social-link link" href="https://instagram.com/" target="_blank"rel="noreferrer noopener"></a>               
+              <a
+                class="mob-menu__social-link link"
+                href="https://instagram.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Instagram</a
+              >
             </li>
             <li class="mob-menu__social-item">
-              <a class="mob-menu__social-link link" href="https://instagram.com/" target="_blank"rel="noreferrer noopener"></a>               
+              <a
+                class="mob-menu__social-link link"
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Twitter</a
+              >
             </li>
             <li class="mob-menu__social-item">
-              <a class="mob-menu__social-link link" href="https://instagram.com/" target="_blank"rel="noreferrer noopener"></a>               
+              <a
+                class="mob-menu__social-link link"
+                href="https://facebook.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >Facebook</a
+              >
             </li>
             <li class="mob-menu__social-item">
-              <a class="mob-menu__social-link link" href="https://instagram.com/" target="_blank"rel="noreferrer noopener"></a>               
+              <a
+                class="mob-menu__social-link link"
+                href="https://linkedin.com/"
+                target="_blank"
+                rel="noreferrer noopener"
+                >LinkedIn</a
+              >
             </li>
-                  
           </ul>
         </div>
       </div>
@@ -153,12 +180,23 @@
           <ul class="work__list list">
             <li class="work__item">
               <div class="work__img-wrapper">
-                <img
-                  class="work__img"
-                  src="./images/Work_with/work_with_decktop.jpg"
-                  alt="Работа с настольным компьютером"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/Work_with/img.webp 1x, ./images/Work_with/img@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/Work_with/img.jpg 1x, ./images/Work_with/img@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="work__img"
+                    src="#"
+                    alt="Работа с настольным компьютером"
+                    width="370"
+                  />
+                </picture>
                 <div class="work__meta">
                   <p class="work__img-title">Десктопные приложения</p>
                 </div>
@@ -166,12 +204,23 @@
             </li>
             <li class="work__item">
               <div class="work__img-wrapper">
-                <img
-                  class="work__limg"
-                  src="./images/Work_with/work_with_phone.jpg"
-                  alt="Работа с настольным компьютером"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/Work_with/img-1.webp 1x, ./images/Work_with/img@2x-1.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/Work_with/img-1.jpg 1x, ./images/Work_with/img@2x-1.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="work__limg"
+                    src="#"
+                    alt="Работа с настольным компьютером"
+                    width="370"
+                  />
+                </picture>
                 <div class="work__meta">
                   <p class="work__img-title">Мобильные приложения</p>
                 </div>
@@ -179,12 +228,23 @@
             </li>
             <li class="work__item">
               <div class="work__img-wrapper">
-                <img
-                  class="work__limg"
-                  src="./images/Work_with/work_with_tablet.jpg"
-                  alt="Работа с настольным компьютером"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="./images/Work_with/img-2.webp 1x, ./images/Work_with/img@2x-2.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="./images/Work_with/img-2.jpg 1x, ./images/Work_with/img@2x-2.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="work__limg"
+                    src="#"
+                    alt="Работа с настольным компьютером"
+                    width="370"
+                  />
+                </picture>
                 <div class="work__meta">
                   <p class="work__img-title">Дизайнерские решения</p>
                 </div>
@@ -201,20 +261,37 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/Our_team/desktop/team-member-1-desktop.jpg"
+                  srcset="./images/Our_team/desktop/igori/img.webp 1x, ./images/Our_team/desktop/igori/img@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Our_team/desktop/igori/img.jpg 1x, ./images/Our_team/desktop/igori/img@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
+
                 <source
-                  srcset="./images/Our_team/tablet/team-member-1-tablet-min.jpg"
+                  srcset="./images/Our_team/tablet/igori/img.webp 1x, ./images/Our_team/tablet/igori/img@2x.webp 2x"
                   media="(min-width: 768px)"
+                  type="image/webp"
                 />
                 <source
-                  srcset="./images/Our_team/mobile/team-member-1-mobile-min.jpg"
-                  media="(min-width: 480px)"
+                  srcset="./images/Our_team/tablet/igori/img.jpg 1x, ./images/Our_team/tablet/igori/img@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/Our_team/mobile/igori/img.webp 1x, ./images/Our_team/mobile/igori/img@2x.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Our_team/mobile/igori/img.jpg 1x, ./images/Our_team/mobile/igori/img@2x.jpg 2x"
+                  media="(max-width: 767px)"
                 />
                 <img
                   class="team__img"
-                  src="./images/Our_team/mobile/team-member-1-mobile-min.jpg"
+                  src="#"
                   alt="Игорь Демьяненко"
                 />
               </picture>
@@ -276,20 +353,37 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/Our_team/desktop/team-member-2-desktop.jpg"
+                  srcset="./images/Our_team/desktop/olga/img-1.webp 1x, ./images/Our_team/desktop/olga/img@2x-1.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Our_team/desktop/olga/img-1.jpg 1x, ./images/Our_team/desktop/olga/img@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
+
                 <source
-                  srcset="./images/Our_team/tablet/team-member-2-tablet-min.jpg"
+                  srcset="./images/Our_team/tablet/olga/img-1.webp 1x, ./images/Our_team/tablet/olga/img@2x-1.webp 2x"
                   media="(min-width: 768px)"
+                  type="image/webp"
                 />
                 <source
-                  srcset="./images/Our_team/mobile/team-member-2-mobile-min.jpg"
-                  media="(min-width: 480px)"
+                  srcset="./images/Our_team/tablet/olga/img-1.jpg 1x, ./images/Our_team/tablet/olga/img@2x-1.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/Our_team/mobile/olga/img-1.webp 1x, ./images/Our_team/mobile/olga/img@2x-1.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Our_team/mobile/olga/img-1.jpg 1x, ./images/Our_team/mobile/olga/img@2x-1.jpg 2x"
+                  media="(max-width: 767px)"
                 />
                 <img
                   class="team__img"
-                  src="./images/Our_team/mobile/team-member-2-mobile-min.jpg"
+                  src="#"
                   alt="Ольга Репина"
                 />
               </picture>
@@ -349,22 +443,38 @@
               </div>
             </li>
             <li class="team__item">
-              <picture>
+              <source
+                  srcset="./images/Our_team/desktop/nicolai/img-2.webp 1x, ./images/Our_team/desktop/nicolai/img@2x-2.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
                 <source
-                  srcset="./images/Our_team/desktop/team-member-3-desktop.jpg"
+                  srcset="./images/Our_team/desktop/nicolai/img-2.jpg 1x, ./images/Our_team/desktop/nicolai/img@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
+
                 <source
-                  srcset="./images/Our_team/tablet/team-member-3-tablet-min.jpg"
+                  srcset="./images/Our_team/tablet/nicolai/img-2.webp 1x, ./images/Our_team/tablet/nicolai/img@2x-2.webp 2x"
                   media="(min-width: 768px)"
+                  type="image/webp"
                 />
                 <source
-                  srcset="./images/Our_team/mobile/team-member-3-mobile-min.jpg"
-                  media="(min-width: 480px)"
+                  srcset="./images/Our_team/tablet/nicolai/img-2.jpg 1x, ./images/Our_team/tablet/nicolai/img@2x-2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/Our_team/mobile/nicolai/img-2.webp 1x, ./images/Our_team/mobile/nicolai/img@2x-2.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Our_team/mobile/nicolai/img-2.jpg 1x, ./images/Our_team/mobile/nicolai/img@2x-2.jpg 2x"
+                  media="(max-width: 767px)"
                 />
                 <img
                   class="team__img"
-                  src="./images/Our_team/mobile/team-member-3-mobile-min.jpg"
+                  src="./images/Our_team/desktop/nicolai/img-2.webp"
                   alt="Николай Тарасов"
                 />
               </picture>
@@ -426,20 +536,37 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./images/Our_team/desktop/team-member-4-desktop.jpg"
+                  srcset="./images/Our_team/desktop/mihail/img-3.webp 1x, ./images/Our_team/desktop/mihail/img@2x-3.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Our_team/desktop/mihail/img-3.jpg 1x, ./images/Our_team/desktop/mihail/img@2x.jpg 2x"
                   media="(min-width: 1200px)"
                 />
+
                 <source
-                  srcset="./images/Our_team/tablet/team-member-4-tablet-min.jpg"
+                  srcset="./images/Our_team/tablet/mihail/img-3.webp 1x, ./images/Our_team/tablet/mihail/img@2x-3.webp 2x"
                   media="(min-width: 768px)"
+                  type="image/webp"
                 />
                 <source
-                  srcset="./images/Our_team/mobile/team-member-4-mobile-min.jpg"
-                  media="(min-width: 480px)"
+                  srcset="./images/Our_team/tablet/mihail/img-3.jpg 1x, ./images/Our_team/tablet/mihail/img@2x-3.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+
+                <source
+                  srcset="./images/Our_team/mobile/mihail/img-3.webp 1x, ./images/Our_team/mobile/mihail/img@2x-3.webp 2x"
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/Our_team/mobile/mihail/img-3.jpg 1x, ./images/Our_team/mobile/mihail/img@2x-3.jpg 2x"
+                  media="(max-width: 767px)"
                 />
                 <img
                   class="team__img"
-                  src="./images/Our_team/mobile/team-member-4-mobile-min.jpg"
+                  src="#"
                   alt="Михаил Ермаков"
                 />
               </picture>
@@ -553,7 +680,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact-list">
       <div class="container">
         <div class="footer__positioning">
           <div class="footer__left-side">

@@ -608,6 +608,7 @@ body {
 
 .mob-menu {
   position: fixed;
+  z-index: 100;
   top: 0%;
   left: 0%;
   width: 100vw;
@@ -617,6 +618,7 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity var(--transition-duration) var(--cubic), visibility var(--transition-duration) var(--cubic);
 }
 
 .mob-menu.is-open {
@@ -628,11 +630,18 @@ body {
 
 .mobile-menu__container {
   position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 48px 25px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  .mobile-menu__container {
+    width: 450px;
+  }
 }
 
 .mob-menu__close-button {
@@ -662,16 +671,32 @@ body {
   fill: var(--accent-color);
 }
 
+.mob-menu__contact {
+  margin-top: auto;
+  margin-bottom: 64px;
+}
+
 .mob-menu__nav-item:not(:last-child) {
   margin-bottom: 32px;
 }
 
 .mob-menu__nav-link {
   font-weight: 500;
-  font-size: 40px;
-  line-height: calc(47 / 40);
+  font-size: 28px;
+  line-height: calc(34 / 28);
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
+}
+
+@media screen and (min-width: 480px) {
+  .mob-menu__nav-link {
+    font-size: 40px;
+    line-height: calc(47 / 40);
+  }
+}
+
+.mob-menu__nav-link.active-page {
+  color: var(--accent-color);
 }
 
 .mob-menu__contact-item:not(:last-child) {
@@ -680,18 +705,69 @@ body {
 
 .mob-menu__tel-link {
   font-weight: 500;
-  font-size: 34px;
-  line-height: calc(40 / 34);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 480px) {
+  .mob-menu__tel-link {
+    font-size: 34px;
+    line-height: calc(40 / 34);
+  }
+}
+
 .mob-menu__email-link {
   font-weight: 500;
-  font-size: 24px;
-  line-height: calc(28 / 24);
+  font-size: 18px;
+  line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+
+@media screen and (min-width: 480px) {
+  .mob-menu__email-link {
+    font-size: 24px;
+    line-height: calc(28 / 24);
+  }
+}
+
+.mob-menu__social {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mob-menu__social-item {
+  display: flex;
+  align-items: center;
+}
+
+.mob-menu__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.mob-menu__social-item:not(:last-child)::after {
+  content: '';
+  width: 1px;
+  height: 22px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-menu__social-link {
+  margin-right: 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 480px) {
+  .mob-menu__social-link {
+    font-size: 18px;
+    line-height: calc(22 / 18);
+  }
 }
 
 .hero {
@@ -711,18 +787,36 @@ body {
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-mobile@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
   }
 }
 
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-tablet.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-desktop@2x.jpg);
   }
 }
 

@@ -12,12 +12,12 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-background-color);
   border-radius: 4px;
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  // }
   @media screen and (min-width: 1200px) {
-    width: 528px;
-    height: 582px;
+    max-width: 528px;
+    max-height: 582px;
   }
 }
 .modal__button {

@@ -614,7 +614,6 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 0px 15px;
-  max-height: 796px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -686,6 +685,11 @@ body {
   line-height: calc(34 / 28);
   letter-spacing: 0.02em;
   color: var(--primary-title-color);
+}
+
+.mob-menu__nav-item:hover .mob-menu__nav-link,
+.mob-menu__nav-item:focus .mob-menu__nav-link {
+  color: var(--accent-color);
 }
 
 @media screen and (min-width: 480px) {

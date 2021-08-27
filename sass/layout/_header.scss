@@ -101,7 +101,7 @@
   width: 100vw;
   height: 100vh;
   padding: 0px 15px;
-  max-height: 796px;
+  // max-height: 796px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -167,7 +167,7 @@
   color: var(--primary-title-color);
   .mob-menu__nav-item:hover &,
   .mob-menu__nav-item:focus & {
-  color: var(--accent-color);
+    color: var(--accent-color);
   }
   @media screen and (min-width: 480px) {
     font-size: 40px;
@@ -178,7 +178,6 @@
 .mob-menu__nav-link.active-page {
   color: var(--accent-color);
 }
-
 
 .mob-menu__contact-item:not(:last-child) {
   margin-bottom: 32px;
